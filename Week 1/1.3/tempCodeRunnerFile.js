@@ -1,0 +1,1 @@
+console.log("Index of String:", str.lastIndexOf(target))

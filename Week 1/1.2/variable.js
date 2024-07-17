@@ -103,5 +103,5 @@ function calculateArithmetic(a,b,type) {
     }
 }
 
-const value = calculateArithmetic(1,2,"sum");
+const value = calculateArithmetic(1,6,"sum");
 console.log(value);
