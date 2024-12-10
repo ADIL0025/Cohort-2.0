@@ -94,15 +94,48 @@ console.log(value);
 */
 
 //-------Callbacks Function--------------
+// function calculateArithmetic(a,b,type) {
+//     if (type == "sum") {
+//         return a+b;
+//     }
+//     if (type == "minus") {
+//         return a-b;
+//     }
+// }
+
+// const value = calculateArithmetic(1,6,"sum");
+// console.log(value);
+
+
 function calculateArithmetic(a,b,type) {
     if (type == "sum") {
-        return a+b;
+        const value = sum(a,b);
+        return value;
     }
-    if (type == "minus") {
-        return a-b;
+    if (type == "sub") {
+        const value = sub(a,b);
+        return value;
     }
+}
+
+function sum(a,b){
+    return a + b;
+}
+
+function sub(a,b){
+    return a - b;
 }
 
 const value = calculateArithmetic(1,6,"sum");
 console.log(value);
 
+// function calculateArithmetic(a,b,arithmeticFinalFunction) {
+//     const ans = arithmeticFinalFunction(a,b);
+//     return ans;
+// }
+
+// function sum(a,b){
+//     return a + b;
+// }
+// const value = calculateArithmetic(1,2,sum);
+// console.log(value);
